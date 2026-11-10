@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Ricarth Cabral | Desenvolvedor de Software</title>
+    <meta
+      name="description"
+      content="Portfólio de Pedro Ricarth Gonçalves Cabral, desenvolvedor full stack com React, PHP, Laravel, Node.js e C. Projetos, experiência e contato."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Pedro Ricarth Cabral | Desenvolvedor de Software" />
+    <meta
+      property="og:description"
+      content="Projetos em Laravel, React Native e Python, experiência e contato."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='18' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E"
+    />
+    <!-- Define o tema antes da primeira pintura, para não piscar branco no tema escuro. -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme");
+          if (theme !== "light" && theme !== "dark") {
+            theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (error) {}
+      })();
+    </script>
+    <style>
+      html[data-theme="dark"] { background: #0e1116; }
+      html[data-theme="light"] { background: #f8fafc; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
